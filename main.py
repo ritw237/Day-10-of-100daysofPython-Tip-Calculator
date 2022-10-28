@@ -1,0 +1,18 @@
+print("Extend your Bill Calculator!!!")
+print()
+
+bill = float(input("Total Bill Amount? "))
+tip = float(input("What % of tip you want to be added to the bill total? Typically a bill is either 15%, 18% or 20% of the total bill : "))
+print()
+tip_decimal = float(tip*0.01)
+new_bill = float(bill + bill*tip_decimal)
+new_bill = round(new_bill,2)
+print("Your total bill is: ",new_bill)
+print(type(new_bill))
+print()
+people = int(input("How many people are splitting the bill? "))
+print()
+amount_each = float(new_bill/people)
+amount_each = round(amount_each,2)
+print("Amount to be payed by everyone: ",amount_each)
+
